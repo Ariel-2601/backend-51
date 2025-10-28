@@ -80,7 +80,7 @@ export const eliminarCategoria = async (req, res) => {
 };
 
 // Controlador para actualizar parcialmente una categoria por su ID
-export const actualizarCategortaPatch = async (req, res) => {
+export const actualizarCategoriaPatch = async (req, res) => {
   try {
     const { id_categoria } = req.params;
     const datos = req.body;

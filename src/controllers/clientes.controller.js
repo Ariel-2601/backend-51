@@ -14,7 +14,7 @@ export const obtenerClientes = async (req, res) => {
 };
 
 
-// Obtener una categoría por su ID
+// Obtener un Cliente por su ID
 export const obtenerCliente = async (req, res) => {
   try {
     const id_cliente = req.params.id_cliente;

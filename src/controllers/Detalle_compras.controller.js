@@ -40,7 +40,7 @@ import { pool } from "../../db_connection.js";
     try { 
       const { id_compra, id_producto, cantidad, precio_unitario } = req.body; 
       const [result] = await pool.query(
-        'INSERT INTO detalles_compras (id_compra, id_producto, cantidad, precio_unitario) VALUES (?, ?, ?, ?)',
+        'INSERT INTO detalle_compra (id_compra, id_producto, cantidad, precio_unitario) VALUES (?, ?, ?, ?)',
         [id_compra, id_producto, cantidad, precio_unitario]
       );
       res.status(201).json({ id_detalle_compra: result.insertId });

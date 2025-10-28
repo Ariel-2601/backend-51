@@ -51,7 +51,7 @@
     }
   };
 
-     // Eliminar un detalle de compra por su ID
+     // Eliminar una venta por su ID
 export const eliminarVenta = async (req, res) => {
   try {
     const id_venta = req.params.id_venta;

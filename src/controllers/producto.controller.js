@@ -1,6 +1,6 @@
   import { pool } from "../../db_connection.js";
 
-  // Obtener todas las productos
+  // Obtener todos los productos
   export const obtenerProducto = async (req, res) => {
     try {
       const [result] = await pool.query("SELECT * FROM productos");
@@ -13,7 +13,7 @@
     }
   };
 
-  // Obtener una producto por su ID
+  // Obtener un producto por su ID
   export const obtenerProductos = async (req, res) => {
     try {
       const id_producto = req.params.id_producto;

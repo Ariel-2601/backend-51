@@ -13,7 +13,7 @@ router.get("/venta/:id_venta", obtenerVenta);
 router.post('/registrarventa', registrarVenta);
 
 //ruta para eliminar una venta por su ID
-router.delete('/eliminarventa/:id_venta', eliminarVenta);
+router.delete('/eliminarventa/:id_venta',eliminarVenta);
 
 // Ruta para actualizar una venta por su ID 
 router.put('/actualizarventa/:id_venta', actualizarParcialVenta);

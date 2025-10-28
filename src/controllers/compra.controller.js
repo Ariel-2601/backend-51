@@ -14,7 +14,7 @@
   };
 
 
-  // Obtener una categoría por su ID
+  // Obtener una Compra por su ID
 export const obtenerCompra = async (req, res) => {
   try {
     const id_compra = req.params.id_compra;

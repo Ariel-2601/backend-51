@@ -1,6 +1,6 @@
   import { pool } from "../../db_connection.js";
 
-  // Obtener todas las usuarios
+  // Obtener todos los usuarios
   export const obtenerUsuarios = async (req, res) => {
     try {
       const [result] = await pool.query("SELECT * FROM usuarios");
@@ -13,7 +13,7 @@
     }
   };
 
-  // Obtener una usuario por su ID
+  // Obtener un usuario por su ID
   export const obtenerUsuario = async (req, res) => {
     try {
       const id_usuario = req.params.id_usuario;
@@ -52,7 +52,7 @@
     }
   };
 
-    // Eliminar un detalle de compra por su ID
+    // Eliminar un Usuario por su ID
 export const eliminarUsuario = async (req, res) => {
   try {
     const id_usuario = req.params.id_usuario;

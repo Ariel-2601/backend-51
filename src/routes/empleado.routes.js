@@ -16,6 +16,6 @@ router.post('/registrarempleado', registrarEmpleado);
 router.delete('/eliminarempleado/:id_empleado', eliminarEmpleado);
 
 // Ruta para actualizar un empleado por su ID
-router.put('/actualizarempleado/:id_empleado', actualizarParcialEmpleado);
+router.put('/actualizarempleado/:id_empleado',actualizarParcialEmpleado);
 
 export default router;

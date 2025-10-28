@@ -1,6 +1,6 @@
   import { pool } from "../../db_connection.js";
 
-  // Obtener todas las empleados
+  // Obtener todas los empleados
   export const obtenerEmpleados = async (req, res) => {
     try {
       const [result] = await pool.query("SELECT * FROM empleados");
@@ -13,7 +13,7 @@
     }
   };
 
-  // Obtener una empleado por su ID
+  // Obtener un empleado por su ID
   export const obtenerEmpleado = async (req, res) => {
     try {
       const id_empleado = req.params.id_empleado;
